@@ -1,0 +1,7 @@
+<div class="content-wrapper">
+    {% if pageName == "Dashboard" %}
+        {% include 'layout/contents/dashboard.html' %}
+    {% elif pageName == "SystemAdmin" %}
+        {% include 'layout/contents/system_admin.html' %}
+    {% endif %}
+</div>

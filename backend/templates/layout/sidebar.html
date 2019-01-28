@@ -1,0 +1,29 @@
+<aside class="main-sidebar">
+    <section class="sidebar">
+        <ul class="sidebar-menu">
+            {% if pageName == "Dashboard" %}
+                <li class='active'>
+                {% else %}
+                    <li>
+                    {% endif %}
+                    <a href="/panel/dashboard">
+                        <i class="fa fa-database"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                {% if pageName == "SystemAdmin" %}
+                    <li class='active'>
+                    {% else %}
+                        <li>
+                        {% endif %}
+                        <a href="/panel/systemadmin">
+                            <i class="fa fa-database"></i>
+                            <span>System Admin</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        </ul>
+    </section>
+</aside>
